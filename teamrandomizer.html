@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h1>Start Player</h1>
+        <textarea id="textarea" name="textarea" placeholder="Put list of names here separated by commas" rows="10" cols="50"></textarea>
+        <br>
+        <p>Select number of teams:</p>
+        <select name="teamQuantity" id="teamQuantity">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select> 
+        <br>
+        <br>
+        <button type="button" id="btn" onclick="getRandomTeams()">Get Your Teams!</button>
+        <p id="teams"> </p>
+        <script src="index.js"></script>
+    </body>
+</html>
