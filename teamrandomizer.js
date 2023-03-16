@@ -30,7 +30,18 @@ function getRandomTeams() {
         if (i != teamNumber) {
             teamstext = teamstext + "<br>";
         }
+        let teamId = "team" + teamNum;
+        document.getElementById(teamId).innerHTML = teamstext;
         teamNum++;
+        teamstext="";
     }
-    document.getElementById("teams").innerHTML = teamstext;
+
+    columnSplitPercentage = String(100 / teamNumber) + "%";
+    const column = document.getElementsByClassName("column");
+    for (let i=0; i<column.length;i++) {
+        column[i].style.width = columnSplitPercentage;
+    }
+
+    //document.getElementById("team1").innerHTML = teamstext;
+    // document.getElementById("teams").innerHTML = teamstext;
 }

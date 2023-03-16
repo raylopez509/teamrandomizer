@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+        <link rel="stylesheet" href="teamrandomizer.css">
     </head>
     <body>
-        <h1>Start Player</h1>
-        <textarea id="textarea" name="textarea" placeholder="Put list of names here separated by commas" rows="10" cols="50"></textarea>
+        <h1>Team Randomizer</h1>
+        <textarea id="textarea" name="textarea" placeholder="Put list of names here separated by a new line" rows="10" cols="50"></textarea>
         <br>
         <p>Select number of teams:</p>
         <select name="teamQuantity" id="teamQuantity">
@@ -18,7 +18,16 @@
         <br>
         <br>
         <button type="button" id="btn" onclick="getRandomTeams()">Get Your Teams!</button>
-        <p id="teams"> </p>
-        <script src="index.js"></script>
+        <br>
+        <br>
+        <div class="row">
+            <div class="column" id="team1"></div>
+            <div class="column" id="team2"></div>
+            <div class="column" id="team3"></div>
+            <div class="column" id="team4"></div>
+            <div class="column" id="team5"></div>
+            <div class="column" id="team6"></div>
+        </div>
+        <script src="teamrandomizer.js"></script>
     </body>
 </html>

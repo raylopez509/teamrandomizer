@@ -1,0 +1,9 @@
+body {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.column {
+    float:left;
+    width: 100%;
+}
